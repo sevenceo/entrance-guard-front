@@ -1,0 +1,79 @@
+
+.cl-show{
+	height:110px;list-style-type: none;
+	position:relative;color:#74869c;padding:20px 0;
+}
+.dataCard{margin:20px 0 10px;clear: both;border:solid 1px #c8cbd0;background:#FFF;}
+.cardList{margin:0;padding:0;}
+.cl-show span{
+	height:30px;line-height:30px;text-align: center;
+}
+.cl-show label{
+	font-size:30px;display:block;height:40px;line-height:40px;font-weight: normal;
+}
+.cl-line:before,.cl-line:after{
+	content:"";display:inline-block;background:#74869c;width:1px;height:32px;
+	top:45px;position:absolute;
+}
+.cl-line:before{
+	left:0;
+}
+.cl-line:after{right:0;}
+
+.chartRoom{
+	border:solid 1px #c8cbd0; margin-bottom:10px;background:#fff;
+}
+.chartRoom h5{
+	background-color:#5d8ab3;text-align: left;margin:0;color:#FFF;height:35px;line-height:35px;padding-left:15px;font-weight: normal;font-size:14px;margin-bottom:5px;
+}
+.chartShow{
+	height:400px;
+
+}
+
+.chartCard{
+	margin-bottom:10px;width:100%;
+}
+.el-row .ec-show{
+	border:solid 1px #c8cbd0;height:248px;background:#fff!important;width:100%;
+}
+.ec-show h3{
+		color:#73889b;font-weight:normal;
+	}
+.cl-show .cl-fsave{
+	color:#ff906a;
+}
+.cl-show .cl-fcount{ font-weight: 700; }
+.quiteLinks{
+	background:rgba(60,73,110,0.8);
+	// width:50px;
+	margin:0;padding:0;
+	position: fixed;
+	right:8px;top:45%;
+	color:#fff;
+	padding:8px;
+	border-radius: 5px;
+}
+.quiteLinks a{
+	display: block;
+	border-bottom:solid 1px #ccc;
+	margin-bottom:8px;cursor: pointer;
+}
+.quiteLinks a:last-child{
+	border:none;margin-bottom:0;
+}
+.quiteLinks p{
+	margin:0;padding:2px 0 8px;font-size:12px;opacity:0.7;
+	transition:all 0.3s;
+}
+.quiteLinks .icon{
+	width:26px;
+	height:26px;color:#fff;
+	opacity:0.7;transition:all 0.3s;
+}
+.quiteLinks a:last-child .icon{
+	height:32px;
+}
+.quiteLinks a:hover p,.quiteLinks a:hover .icon{
+	opacity:1;
+}

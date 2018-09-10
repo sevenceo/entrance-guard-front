@@ -1,0 +1,138 @@
+.el-dropdown-menu{
+    // 宽度滑块居中
+    .el-slider__runway{
+        margin:0 auto;
+    }
+}
+
+.vhidden{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.dock-dropdown{
+    padding: 1em 1.5em;
+    width: 250px;
+    top: 40px;
+    left: -125px;
+    color: #fff;
+    background-color: rgba(70,79,96,.95);
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.4), 4px 4px 6px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 0 1px rgba(255,255,255,.4),4px 4px 6px rgba(0,0,0,.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,.4), 4px 4px 6px rgba(0,0,0,.5);
+    position: absolute;
+
+    .border-select{
+        width: 125px;
+    }
+}
+.op-dock{
+    input{
+        background-color: transparent;
+        color:#fff;
+    }
+
+    .font-select{
+        width: 65px;
+        background-color: transparent;
+    }
+
+    .numInput{
+        width: 45px;
+    }
+
+    .border-width-input{ width: 45px;}
+
+    .el-form .el-form-item label{color:#fff}
+
+    .el-color-picker__trigger{
+        padding: 0;
+        height: auto;
+        vertical-align: middle;
+        border:none;
+        margin-left: 5px;
+
+        .el-color-picker__color{
+            vertical-align: middle;
+            border-radius: 30px;
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #eee;
+            margin-top: 2px;
+        }
+
+        .el-color-picker__icon{
+            vertical-align: bottom;
+            transform: translate(0, -3px);
+            color: #fff;
+            margin-left: 4px;
+        }
+
+        .el-color-picker__empty{
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            &:before{content:""}
+            position:static;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
+        }
+    }
+
+
+}
+
+
+
+#edui1_toolbarbox{
+    display: none;
+}
+
+#edui1_bottombar{
+    display: none;
+}
+
+#edui4{
+    visibility: hidden !important;
+}
+
+#edui1{
+    width: 100% !important;
+    height: 100% !important;
+    #edui1_iframeholder{
+        width: 100% !important;
+    }
+}
+
+
+.wxap-layer{
+    p{margin:0}
+    font-size: 16px;
+    line-height:1.6;
+
+    .comp-top-level{
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

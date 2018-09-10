@@ -1,0 +1,240 @@
+
+.fr{
+    float: right;
+}
+
+.title{
+    font-size:18px;
+    color: #408ed6;
+}
+
+.configure{
+    position: absolute;
+    left:1045px;
+    top:20px;
+    width: 120px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #1abba9;
+}
+.configure svg {
+    fill: #fff;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    padding:0;
+}
+
+.menuSimulator {
+    position: absolute;
+    left: 30px;
+    top: 110px;
+    width: 320px;
+    bottom: 30px;
+    border: 1px solid #c8cbd0;
+    background-color: #f1f1f1;
+    //background-image: url(~assets/WeChatUIHeader.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    max-height: 620px;
+}
+
+.menuSimulator .status {
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.menuSimulator .header {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-indent: 60px;
+    font-size: 14px;
+}
+
+.menuSimulator .tipInfo {
+    margin:10px;
+    font-size:14px;
+    height: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.menuSimulator .tipInfo .text {
+    line-height: 30px;
+    color: #222;
+}
+
+.menuSimulator .tipInfo .pic {
+    width: auto;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    //background-image: url(~assets/TipMenu.png);
+}
+
+.menuSimulator .tipInfo .memo {
+    line-height: 20px;
+    color: #999;
+}
+
+.menuSimulator .menuNone {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    //background-image: url(~assets/WeChatUIFooter.png);
+}
+
+.menuSimulator .ime {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    //background-image: url(~assets/WeChatUIIme.png);
+    border-top: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    box-sizing: border-box;
+}
+
+.menuSimulator .action {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    font-size:14px;
+    background-color: #f5f5f5;
+    line-height: 50px;
+    border-top: 1px solid #d6d6d6;
+    box-sizing: border-box;
+
+    button{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+.menuSimulator .action .buttonGroup {
+    position: relative;
+    float: left;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.menuSimulator .action .hadChild {
+    //background-image: url(~assets/WeChatUIParentMenu.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.menuSimulator .action .thribble {
+    width: 33.33%;
+    border-right: 1px solid #d6d6d6;
+}
+
+.menuSimulator .action .double {
+    width: 50%;
+    border-right: 1px solid #d6d6d6;
+}
+
+.menuSimulator .action .signal {
+    width: 100%;
+    border-right: 1px solid #d6d6d6;
+}
+
+.menuSimulator .action .buttonGroup .topBtn {
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-right: 1px solid #d6d6d6;
+}
+
+.menuSimulator .action .buttonGroup .children {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    font-size:12px;
+    height: auto;
+    border: 1px solid #d6d6d6;
+    border-bottom:none;
+    box-shadow: -1px -1px 3px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width: 102.66px;
+}
+
+ .buttonGroup .children .chiBtn {
+    border-top: 1px solid #d6d6d6;
+    margin-top: -1px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    list-style-type:none;
+    width: 100%;
+    background-color: #fff;
+}
+ .buttonGroup .children .chiBtn:last-child{
+     border-bottom:1px solid #d6d6d6;
+ }
+
+.menuSimulator .action {
+    .button{
+        overflow: hidden;
+    }
+}
+
+.menuSelector{
+    margin-left:350px;
+    width:69%;
+    clear: both;
+}
+
+.filter-container{
+    margin-top:40px;
+    float: inherit;
+}
+
+.filter-container button {
+    width: 120px;
+    border: 1px solid #4d84ba;
+    border-radius:4px;
+    background-color: #fff;
+    color: #5584ff;
+    font-size: 14px;
+}
+.filter-container .cancel{
+    margin-left: 214px;
+}
+.filter-container .save{
+    background-color: #4d84ba;
+    color: #fff;
+    margin-left:45px;
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    padding-top: 2px;
+    margin-right:5px;
+}
+.icon-cancel1{
+    fill:#5584ff;
+}
+
+.icon-save1{
+    fill: #fff;
+}
+

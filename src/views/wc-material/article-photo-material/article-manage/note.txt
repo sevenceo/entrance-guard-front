@@ -1,0 +1,22 @@
+实现 div contenteditable="true" 类似于 v-model 的效果:
+https://segmentfault.com/a/1190000008261449
+
+UEditor 参考实例
+https://beta.mp.daimatu.cn/material/news
+
+轻量级文本编辑器代码
+https://github.com/wangfupeng1988/wangEditor/
+
+execCommand API文档
+https://developer.mozilla.org/zh-CN/docs/Web/API/Document/execCommand
+
+video 通用代码
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=g0025g5ucw3&tiny=0&auto=0" allowfullscreen></iframe>
+
+<iframe class="tn-video-frame" marginheight="0" frameborder="0" allowfullscreen="" scrolling="no" style="max-height: 100%; border: none; overflow: hidden; max-width: 100%;" ng-src="https://v.qq.com/iframe/player.html?vid=g0025g5ucw3&amp;tiny=0&amp;auto=0" ng-style="{ 'max-width': ((cell.url != null &amp;&amp; cell.url.length > 0) ? '100%': '0%') }" src="https://v.qq.com/iframe/player.html?vid=g0025g5ucw3&amp;tiny=0&amp;auto=0">
+  </iframe>
+
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=p0532g47l5m&tiny=0&auto=0" allowfullscreen></iframe>
+
+<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=p0532g47l5m&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+

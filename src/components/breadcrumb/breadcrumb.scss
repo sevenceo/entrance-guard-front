@@ -1,0 +1,21 @@
+.app-levelbar.el-breadcrumb {
+    display: inline-block;
+    font-size: 14px;
+    height: 28px;
+    float: left;
+    line-height: 28px;
+    margin:15px 0 10px;
+    .no-redirect{
+        color: #97a8be;
+        cursor:text;
+    }
+
+}
+svg{
+    width:14px;
+    height: 19px;
+    float: left;
+    margin-right:5px;
+    margin-top:5px;
+    fill: #3d8ad2;
+}

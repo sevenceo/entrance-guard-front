@@ -1,0 +1,132 @@
+{
+    "contextdata": [
+        {
+            "id": "dashboard",
+            "name": "仪表板",
+            "bewrite": "显示公众号的综合运营状态信息。",
+            "actions": [
+                {
+                    "id": "dashboard.access",
+                    "name": "查看信息"
+                }
+            ]
+        },
+        {
+            "id": "activityextend",
+            "name": "活动扩展菜单",
+            "bewrite": "显示活动详情",
+            "actions": [
+                {
+                    "id": "myd.access",
+                    "name": "查看满意度活动"
+                }
+            ]
+        },
+        {
+            "id": "systemconfig",
+            "name": "系统设置",
+            "bewrite": "管理和配置系统运行所需的各项参数，如信息类别，运行参数等。",
+            "modules": [
+                {
+                    "id": "systemconfig.systemuser",
+                    "name": "系统用户",
+                    "bewrite": "为需要使用系统的用户，开设系统帐号、分配用户角色及使用权限。",
+                    "actions": [
+                        {
+                            "id": "systemconfig.systemuser.access",
+                            "name": "查看用户"
+                        },
+                        {
+                            "id": "systemconfig.systemuser.create",
+                            "name": "添加用户"
+                        },
+                        {
+                            "id": "systemconfig.systemuser.modify",
+                            "name": "修改用户"
+                        },
+                        {
+                            "id": "systemconfig.systemuser.remove",
+                            "name": "删除用户"
+                        }
+                    ]
+                },
+                {
+                    "id": "systemconfig.userrole",
+                    "name": "用户角色",
+                    "bewrite": "管理系统中用户角色，并会不同的功能角色分配相应的功能权限。",
+                    "actions": [
+                        {
+                            "id": "systemconfig.userrole.access",
+                            "name": "查看角色"
+                        },
+                        {
+                            "id": "systemconfig.userrole.create",
+                            "name": "添加角色"
+                        },
+                        {
+                            "id": "systemconfig.userrole.modify",
+                            "name": "修改角色"
+                        },
+                        {
+                            "id": "systemconfig.userrole.remove",
+                            "name": "删除角色"
+                        }
+                    ]
+                },
+                {
+                    "id": "systemconfig.wechataccount",
+                    "name": "公众号帐号",
+                    "bewrite": "用于管理系统内的微信公众号帐号信息，系统支持多个微信公众号。",
+                    "actions": [
+                        {
+                            "id": "systemconfig.wechataccount.access",
+                            "name": "查看记录"
+                        },
+                        {
+                            "id": "systemconfig.wechataccount.create",
+                            "name": "添加记录"
+                        },
+                        {
+                            "id": "systemconfig.wechataccount.modify",
+                            "name": "修改记录"
+                        },
+                        {
+                            "id": "systemconfig.wechataccount.remove",
+                            "name": "删除记录"
+                        }
+                    ]
+                },
+                {
+                    "id": "systemconfig.company",
+                    "name": "组织机构",
+                    "bewrite": "用于管理系统内的组织机构信息。",
+                    "actions": [
+                        {
+                            "id": "systemconfig.company.access",
+                            "name": "查看记录"
+                        },
+                        {
+                            "id": "systemconfig.company.create",
+                            "name": "添加记录"
+                        },
+                        {
+                            "id": "systemconfig.company.modify",
+                            "name": "修改记录"
+                        },
+                        {
+                            "id": "systemconfig.company.remove",
+                            "name": "删除记录"
+                        }
+                    ]
+                },
+                {
+                    "id": "systemconfig.moduleManage",
+                    "name": "模块管理",
+                    "bewrite": "功能才模块管理",
+                    "actions": [
+                    ]
+                }
+            ]
+        }
+    ]
+}

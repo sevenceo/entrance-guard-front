@@ -1,0 +1,51 @@
+{
+    "menuButtonGroup": {
+    "menuGroup01": [
+        {
+            "buttonType": "click",
+            "clickType": "customevent",
+            "customEventKey": "name1",
+            "enable": true,
+            "fullName": "测试1->子菜单名1",
+            "systemEventKey": "name1",
+            "text": "子菜单名1",
+            "useFilter": false,
+            "viewType": "directly"
+        },
+        {
+            "buttonType": "click",
+            "clickType": "customevent",
+            "customEventKey": "name2",
+            "enable": true,
+            "fullName": "测试1->子菜单名2",
+            "systemEventKey": "name2",
+            "text": "子菜单名2",
+            "useFilter": false,
+            "viewType": "directly"
+        },
+        {
+            "buttonType": "navigation",
+            "clickType": "customevent",
+            "enable": true,
+            "fullName": "测试1",
+            "text": "测试1",
+            "useFilter": false,
+            "viewType": "directly"
+        }
+    ],
+    "menuGroup02": [
+        {
+            "buttonType": "view",
+            "clickType": "customevent",
+            "enable": true,
+            "fullName": "aboutus",
+            "sourceUrl": "http://www.baidu.com",
+            "targetUrl": "http://www.baidu.com",
+            "text": "aboutus",
+            "useFilter": false,
+            "viewType": "directly"
+        }
+    ],
+    "menuGroup03": []
+}
+}

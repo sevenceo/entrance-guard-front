@@ -1,0 +1,20 @@
+.cardBack{
+  width: 150px;height: 78px;background-color: rgba(30, 36, 55, 0.17);border-radius:5px;
+}
+.cardBorder{
+  border-bottom: dashed 1px gray; height: 50px
+}
+.shopImgBorder{
+  float: left;margin:10px;height: 30px
+}
+.shopImg{
+  width: 30px;height: 30px; border-radius:50%
+}
+input[type="checkbox"]:checked + label::before {
+  border: 1px #dddddd solid;
+  cursor: pointer;
+  background: url("../../assets/selected.png") 50% 50% no-repeat;
+}
+.footFont{
+  font-size:10px;color:gray;margin-left:10px;line-height: 15px;float: left;
+}

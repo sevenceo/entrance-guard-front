@@ -1,0 +1,7 @@
+样式参考页面 https://beta.mp.daimatu.cn/material/add_news
+
+How to change component template dynamically?
+https://github.com/vuejs/Discussion/issues/193
+
+What is staticRenderFns ? (render vs staticRenderFns)
+https://forum.vuejs.org/t/vue-compile-what-is-staticrenderfns-render-vs-staticrenderfns/3950

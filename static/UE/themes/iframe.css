@@ -1,0 +1,27 @@
+/*可以在这里添加你自己的css*/
+
+body {
+    margin: 0;
+    height: 100%;
+    line-height: 1.6;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    list-style-position:outside;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*!
+Emoji Symbols Font (c)blockworks - Kenichi Kaneko
+http://emojisymbols.com/
+*/
+/*@font-face {*/
+    /*font-family: 'Emoji Symbols Font';*/
+    /*src: url('/styles/app/fonts/emojisymbolsfont/font/EmojiSymbols-Regular.woff');*/
+/*}*/

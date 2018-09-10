@@ -1,0 +1,63 @@
+.menuSelector .menuGroup {
+    position: relative;
+    margin-left:40px;
+    display: inline-block;
+}
+.menuSelector .menuGroup {
+    padding:15px;
+    border: 1px solid #c8cbd0;
+    background:#fff;
+}
+
+.menuSelector .menuGroup .menu {
+    border: 1px dashed #bbb;
+    width: 145px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fafafb;
+    color: #999;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+    border-radius:7px;
+}
+.menuSelector .menuGroup .enable{
+    border: 1px solid #ccc;
+    border-left:7px solid #9dc4e8;
+    color: #000;
+}
+
+
+.menuSelector .menuGroup .menu:first-child {
+    margin-top: 0;
+}
+
+.menu {
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.menuSelector .menuGroup .parent {
+    border: 1px solid #ddd;
+    border-left: 7px solid #1e6bb2;
+    color: #000;
+}
+
+.dialog-warn h3{
+    width: 100%;
+    text-align: center;
+}
+.dialog-warn button{
+    width: 100px;
+    margin: 0 auto;
+}
+.dialog-warn>div{
+    min-height:200px;
+}

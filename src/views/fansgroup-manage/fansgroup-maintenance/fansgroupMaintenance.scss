@@ -1,0 +1,45 @@
+.div-top{
+  // border-top:1px solid #ccc;
+  padding-top: 20px;
+}
+.div-bottom{
+  border-bottom:1px solid #000000;
+  padding-bottom: 20px;
+}
+.div-margin{
+  margin:5px;
+}
+.tab-tags{
+	position: absolute;
+    top: 0;
+    bottom:75px;left: 20px;
+    right: 20px;
+    top: 70px;
+}
+
+.fixScroll{
+	padding-bottom:40px;position:relative;
+}
+.btn-tags{
+	position:absolute;top:7px;right:20px;
+}
+.el-form-item{ margin-bottom:0; }
+.tagSubmit{
+	position:absolute;bottom:20px;left:0;right:0;
+}
+.fixScroll .tags-del{
+	margin-left: 15px;
+    letter-spacing:1px;
+    // font-family: SimSun;
+    font-size: 12px;color:#666;
+}
+.fixScroll .tags-del:hover{
+	background: #de5237;color: #fff;
+}
+.dialogFormBox{
+  overflow:inherit;
+}
+.dialogFormBox .el-tree{
+  height:480px;overflow-y:auto;
+  margin-bottom:10px;margin-top:10px;
+}

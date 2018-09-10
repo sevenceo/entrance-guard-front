@@ -1,0 +1,40 @@
+.treeChange .el-tree{
+  overflow:auto;
+  height: 100%;
+}
+.head-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+}
+.cell{line-height: 40px;}
+.heightAuto{
+	height:100%;
+}
+.treeChange{
+	height:400px;
+}
+.treeChange h5,.treeForAccont h5{
+		    margin: 0px;
+		    height: 0px;
+		    font-size: 14px;
+		    float: left;
+}
+.treeForAccont{
+	padding-top:30px;
+}
+.resetLogin{
+	float: right;margin-top:-30px;font-size:14px;color:#68aeef;
+}
+.resetLogin:hover{
+	color:red;
+}
+.resetLogin:before{
+	content:"〈";margin-right:5px;font-family: simsun;font-size:12px;
+}
+.checkSubmit{
+	float: right;
+}
+.treeTitlle{
+	overflow: hidden;margin-top:20px;
+}

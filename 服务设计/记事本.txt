@@ -1,0 +1,12 @@
+微魔方
+http://wx.chevrolet.com.cn:8088/#/WeChatMenu/Main 
+admin/ADMIN123
+
+jenkins
+http://123.59.51.14:30019/job/saic-weChat-manage-front-test/
+saic-scrm/saic-scrm
+
+ftp:
+222.190.113.253:4022
+root/b2q6J9Et
+/var/www/dist

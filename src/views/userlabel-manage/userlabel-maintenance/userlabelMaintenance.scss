@@ -1,0 +1,54 @@
+.heightAuto{
+   height:100%;
+ }
+.formBox {
+    position: relative;
+    height: 100%;overflow: auto;
+}
+
+.el-row {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.el-col {
+  border-radius: 4px;
+}
+.treeChange .el-tree{
+  overflow:auto;
+  height: 100%;
+  margin-bottom:10px;
+}
+.treeChange{
+  height:100%;
+  padding-top:30px;
+}
+.div-top{
+  border-top:1px dashed #ccc;
+  padding-top: 20px;
+  position: absolute;bottom: 0;
+  left:50px;right: 30px;
+}
+.div-bottom{
+  border-bottom:1px solid #000000;
+  padding-bottom: 20px;
+}
+.div-margin{
+  padding:1px;float: right;
+}
+.formBox form{
+    position: absolute;
+    bottom:70px;
+    top:45px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.el-select{
+    display:block;
+}
+.el-date-editor.el-input{ width:100% }
+.el-form-item{ margin-bottom:15px; }
+.el-form--label-top .el-form-item__label{ padding:0 0 5px 2px;}
+.gl-input{ float:left; width:auto; }
+.el-button--small{ padding:11px 10px;}

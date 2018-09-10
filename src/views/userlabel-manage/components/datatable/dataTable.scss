@@ -1,0 +1,14 @@
+.data-table{
+  //border: none;
+
+  .el-table__body-wrapper tbody{
+    td{
+      border-bottom: none;
+      // padding:5px 0;
+    }
+    .el-table__row--striped .cell{
+      // background: #ebf5ff;
+    }
+  }
+
+}

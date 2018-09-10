@@ -1,0 +1,94 @@
+// .el-tab-pane{margin-top:15px}
+.user_title {
+  height: 45px;
+  line-height: 45px;
+  background: #f3f3f3;
+  text-align: center;
+  // border-right: 1px solid #dddddd;
+  box-sizing: border-box;
+  color: #666;font-size: 16px;
+}
+.el-col-8{width: 20%}
+.el-col-16{width: 80%}
+
+.row_box{
+  border: 1px solid #dddddd;
+  padding-bottom: 10px;
+  background: #FFF;
+}
+
+.table_box:nth-child(odd){
+  background: #ffffff;
+}
+.table_box:nth-child(even){
+  background: #ebf5ff;
+}
+
+.btn{
+  width: 120px;
+  height: 34px;
+  border: none;
+  border-radius: 17px;
+}
+.icon-edit1{
+  overflow: hidden;
+  width: 17px;
+  height: 17px;
+  fill: #ffffff;
+  vertical-align: middle;
+  position: relative;
+  right: 10px;
+  bottom: 1px;
+}
+.text-title{
+  display: inline-block;
+  position: absolute;
+}
+.text-title i{
+  display: inline-block;
+  width: 30px;
+  color: #ff0000;
+  padding: 10px 15px 10px 5px;
+  position: relative;
+  top:2px;
+}
+.filter-container{
+  margin-top:10px;
+  text-align: center;
+  float: none;
+}
+.filter-container button {
+  width: 120px;
+  border: 1px solid #4d84ba;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #4d84ba;
+  font-size: 14px;
+}
+.filter-container .save{
+  background-color: #52a54b;
+  color: #fff;border-color:#52a54b;
+  margin-left:45px;
+}
+.icon{
+  width: 14px;
+  height: 14px;
+  padding-top: 2px;
+  margin-right:5px;
+}
+.icon-cancel1{
+  fill:#4d84ba;
+}
+
+.icon-save1{
+  fill: #fff;
+}
+.userInfo-tabs{
+  background:#fff;clear:both;padding:0 0 10px;border:solid 1px #c8cbd0;
+}
+.js-checkbox-con{
+  border-top:solid 1px #ddd;
+}
+.js-checkbox-con .el-col-8{
+  border-right:solid 1px #ddd;
+}

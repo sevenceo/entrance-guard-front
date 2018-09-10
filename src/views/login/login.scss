@@ -1,0 +1,192 @@
+@import "~assets/styles/mixin.scss";
+
+body{
+    overflow-x:hidden;
+}
+
+.login-container {
+    @include relative;
+    background:url('../../assets/login/timg.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+    background-position: center;
+    top:60px;bottom:0;
+    height:auto;
+    overflow: hidden;
+    .top-bar{
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+        .logo {
+            vertical-align: middle;
+            height: 50px;
+            margin: 0px 10px 5px 60px;
+        }
+
+        .logo-title{
+            color: #00255D;
+            font:24px/64px Microsoft YaHei;
+            vertical-align: middle;
+        }
+
+        .right-area{
+            float: right;
+            height: 60px;
+            line-height: 60px;
+            margin-right: 40px;
+
+            .car-logo{
+                vertical-align: baseline;
+                // height: 50px;
+                margin: 10px 15px;
+            }
+        }
+
+    }
+
+    .qyInfo{
+        text-align: center;
+        color: #666;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        font-size: 14px;
+        background: #FFF;
+        height: 50px;
+        padding: 0;
+        line-height: 50px;
+        margin: 0;
+    }
+    .el-checkbox{font-weight:normal;}
+    .login-form {
+        position: absolute;
+        top: 50%;
+        right: 70px;
+        width: 410px;
+        height:360px;
+        // padding-bottom: 40px;
+        background-image: url("~assets/login/form-bg.png");
+        background-size: 100% 100%;
+        text-align:center;
+        overflow:hidden;
+        z-index:2;
+        margin-top:-170px;
+
+        .form-title{
+            font-size: 22px;
+            color: #eeeeee;
+            margin: 30px auto 20px;
+            display: block;
+            text-align: center;
+            // font-weight: bold;
+        }
+
+        //input:-webkit-autofill {
+        //    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+        //    -webkit-text-fill-color: #333 !important;
+        //}
+        input {
+            background: #16264a;
+            border: 0;
+            color: #eeeeee;
+            -webkit-appearance: none;
+            //border-radius: 0px;
+            padding: 12px 5px 12px 15px;
+            height: 45px;
+        }
+        .icon {
+            //padding: 6px 5px 6px 10px;
+            background-color: #0094ec;
+            fill: #eee;
+            width: 22px;
+            height: 22px;
+        }
+
+        .el-form-item{margin-bottom: 20px}
+
+        .el-input-group{
+            width: 292px;
+            height: 45px;
+            border-radius: 7px;
+            overflow: hidden;
+
+            .el-input-group__prepend{
+                width: 58px;
+                height: 45px;
+                background-color: #0094ec;
+                border: 0;
+            }
+        }
+
+        .remember-pwd{
+            margin-left:60px;
+            color: #eeeeee;
+
+            input{height: 10px}
+        }
+
+        .login-btn{
+            width: 292px;
+            height: 45px;
+            span{ font: 18px/18px Microsoft YaHei; }
+
+        }
+
+    }
+
+
+    .forget-pwd {
+        color: #fff;
+    }
+    .rightBg{
+        position: absolute;
+        top:0;
+        bottom:0;
+        background-color:#587eac;
+        width:180px;
+        left: -80px;
+        transform: skew(-10deg);
+        z-index:5;
+    }
+    .rightFroms{
+        position:absolute;
+        z-index:9;
+        width:55%;
+        top:20%;
+        bottom:20%;
+        left:100px;
+        transform: skew(10deg);
+    }
+    .el-form-item__content{
+        border-radius:8px;
+        overflow:hidden;
+    }
+    .newUserReg{
+        position:absolute;
+        left:-5px;
+        border-radius:0;
+        width:160px;
+
+        bottom:10px;
+        background-color:#20a1ff;
+        transform: skew(10deg);
+    }
+    .pwdEdit{
+        font-size: 14px;
+        text-align: right;
+        margin-bottom: 28px;
+        margin-top: -10px;
+    }
+
+
+}
+.formPlace{
+    width:1190px;height: 600px;margin:-300px 0 0 -595px;position:absolute;
+    z-index:0;top:50%;left:50%;
+}
+.login-container .login-form input:-webkit-autofill{
+    background-color: #000!important;
+}

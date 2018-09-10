@@ -1,0 +1,856 @@
+body,
+html {
+    font-family: "microsoft yahei";
+    min-width: 1280px;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+    html {
+        font-size: 26.66px !important;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    html {
+        font-size: 28.45px !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    html {
+        font-size: 32px !important;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 40px !important;
+    }
+}
+
+/*
+
+宽1280px: (40px/1920px)*宽1280px=26.66px
+宽1366px: (40px/1920px)*宽1366px=28.45px
+宽1440px: (40px/1920px)*宽1440px=30px
+宽1536px: (40px/1920px)*宽1536px=32px
+宽1920px: (40px/1920px)*1920px=40px
+1920px的设计搞元素大小40px折合为1rem
+例如：subtitle为26px，那么：26px/40px*1rem=0.65rem;*/
+
+h3,
+img,
+li,
+p,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+/*img {
+	display: block
+}*/
+
+ul {
+    list-style: none
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.hide {
+    display: none;
+}
+
+.anim-flip {
+    animation-duration: 2s;
+    /*动画持续时间*/
+    animation-delay: 0s;
+    /*动画延迟时间*/
+    animation-iteration-count: 1;
+    /*动画执行次数*/
+    animation-name: featuresicon;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@keyframes featuresicon {
+    0% {
+        transform: rotateY(0) scale(0);
+        opacity: .1;
+    }
+    25% {
+        transform: rotateY(-90deg) scale(0.25);
+        opacity: .25;
+    }
+    50% {
+        transform: rotateY(-180deg) scale(0.5);
+        opacity: .5;
+    }
+    75% {
+        transform: rotateY(-270deg) scale(0.75);
+        opacity: .75;
+    }
+    100% {
+        transform: rotateY(-360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.mainWarp {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../../assets/images/welcome/ld.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.mainWarp img {
+    max-width: 100%;
+}
+
+.txt01 {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    width: 21.77%;
+    transform: translateY(-50%);
+}
+
+.txt02 {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    width: 23.64%;
+    margin-left: -11.82%;
+}
+
+.txt03 {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 28.59%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.txt03_2 {
+    margin-top: 4%;
+}
+
+/*.picbox {*/
+/*position: absolute;*/
+/*top: 50%;*/
+/*left: 50%;*/
+/*width: 23.22%;*/
+/*transform: translateY(-50%) translateX(-50%);*/
+/*text-align: center;*/
+/*margin: 0 auto;*/
+/*transform-style: preserve-3d;*/
+/*perspective: 600px;*/
+/*}*/
+
+/*.picbox img {*/
+/*border-radius: 5%;*/
+/*}*/
+
+.picbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*width: 23.22%;*/
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    perspective: 600px;
+}
+
+.picbox .imgbox {
+    position: relative;
+}
+
+.picbox .ibname {
+    font-size: .7rem;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+
+}
+
+.picbox img {
+    border-radius: .6rem;
+    display: block;
+}
+
+/*main.html*/
+
+.pageWarp .userWarp {
+    animation-duration: 1s; /*动画持续时间*/
+    animation-delay: 0s; /*动画延迟时间*/
+    animation-iteration-count: 1; /*动画执行次数*/
+}
+
+.pageWarp {
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.pageWarp .conLeft {
+    float: left;
+    width: 66.66%;
+    height: 100%;
+    padding: 1.875%;
+    box-sizing: border-box;
+}
+
+.pageWarp .conRight {
+    float: right;
+    width: 33.33%;
+    height: 100%;
+    padding: .6rem 0 .6rem .6rem;
+    box-sizing: border-box;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.pageWarp .caption {
+    text-align: center;
+}
+
+.pageWarp .caption .plogo {
+    max-width: 100%;
+    width: 6.4rem;
+}
+
+.pageWarp .caption .cap-txt {
+    color: #7a9d2f;
+    font-size: 0.675rem;
+    font-weight: bold;
+}
+
+.pageWarp .userWarp {
+    height: 11.35rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 0.2rem #999;
+    margin-top: 0.75rem;
+    overflow: hidden;
+    background: url(../../assets/images/welcome/userbg.png) no-repeat center center;
+    background-size: cover !important;
+}
+
+.pageWarp .userWarp .userbox {
+    height: 100%;
+    width: 26.5625%;
+    position: relative;
+    float: left;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.pageWarp .userbox .userpic {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+.pageWarp .userbox .userpic img {
+    width: 100%;
+    /*max-width: 100%;*/
+    height: 100%;
+}
+
+.pageWarp .user-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.2rem;
+}
+
+.pageWarp .user-info .info-txt {
+    padding: 0.2rem .5rem;
+    line-height: 1.5;
+}
+
+.pageWarp .user-info .info-line1 {
+    font-size: 0.508rem;
+    color: #FFF;
+}
+
+.pageWarp .user-info .info-line2 {
+    font-size: 0.33875rem;
+    color: #FFF;
+}
+
+.pageWarp .user-info .info-line3 {
+    font-size: 0.33875rem;
+    color: #FFF;
+}
+
+.pageWarp .user-other {
+    width: 73%;
+    float: right;
+    overflow: hidden;
+    height: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.pageWarp .user-other .user-detail {
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding-left: .5rem;
+    box-sizing: border-box;
+    padding-top: .5rem;
+}
+
+.pageWarp .user-other .user-recomd {
+    float: right;
+    width: 30%;
+    border-left: 2px solid #bbb;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #FFF;
+    padding: .5rem 0;
+}
+
+.pageWarp .user-recomd .ur-line1 {
+    font-size: 0.508rem;
+}
+
+.pageWarp .user-recomd .ur-line2 {
+    font-size: 0.508rem;
+}
+
+.pageWarp .ur-product {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pageWarp .ur-product li {
+    margin-top: .4rem;
+}
+
+.pageWarp .ur-product li img {
+    max-width: 100%;
+    height: 1.8rem;
+}
+
+.pageWarp .ur-product p {
+    font-size: 0.28225rem;
+}
+
+.pageWarp .history {
+    height: 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 0.2rem #999;
+    margin-top: 0.75rem;
+    position: relative;
+}
+
+.pageWarp .history .history-title {
+    color: #44c296;
+    font-size: 0.4515rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    left: 1rem;
+    position: absolute;
+    width: 3rem;
+    font-weight: bold;
+}
+
+.pageWarp .member-list {
+    overflow: hidden;
+    height: 2.5rem;
+    padding-left: 4rem;
+}
+
+.pageWarp .member-list li {
+    float: left;
+    width: 8.3333%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.pageWarp .member-list li img {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0.875rem;
+    vertical-align: middle;
+}
+
+.pageWarp .user-detail .ud-area1 {
+    color: #FFFFFF;
+    position: relative;
+    font-size: 0.508rem;
+}
+
+.pageWarp .user-detail .sm-pic {
+    width: 1.575rem;
+    height: 1.3rem;
+    position: absolute;
+    border-radius: .2rem;
+}
+
+.pageWarp .user-detail .uda-tips {
+    padding-left: 2rem;
+}
+
+.pageWarp .user-detail .uda-tips .udat2 {
+    position: relative;
+    display: inline-block;
+}
+
+.pageWarp .user-detail .uda-tips em {
+    background-size: auto;
+    display: inline-block;
+    position: absolute;
+    right: -0.6rem;
+    top: -0.5rem;
+    width: 0.65rem;
+    height: 0.6rem;
+    display: none;
+}
+
+.pageWarp .user-detail .uda-tips em.lev1 {
+    background: url(../../assets/images/welcome/you.png) no-repeat center center;
+}
+
+.pageWarp .user-detail .uda-tips em.lev2 {
+    background: url(../../assets/images/welcome/liang.png) no-repeat center center;
+}
+
+.pageWarp .user-detail .ud-area2 {
+    color: #FFFFFF;
+    font-size: 0.508rem;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.pageWarp .user-detail .ud-area2 span {
+    color: #f0f264;
+}
+
+.pageWarp .user-detail .ud-area3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 7rem;
+    width: 13rem;
+    border-radius: .5rem;
+    border: 1px dashed #ccc;
+    margin-top: .5rem;
+}
+
+.pageWarp .pk-chart {
+    overflow: hidden;
+    padding-top: .5rem;
+}
+
+.pageWarp .pk-chart .pkc-title {
+    color: #fff;
+    /*font-size: 0.3375rem;*/
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.pageWarp .pk-chart .today-index {
+    float: left;
+    width: 6rem
+}
+
+.pageWarp .pk-chart .history-index {
+    float: right;
+    width: 6rem
+}
+
+.pageWarp .txt-pk {
+    color: #FFF;
+    font-size: 0.621rem;
+    font-weight: bold;
+    position: relative;
+    top: 1.6rem;
+}
+
+.pageWarp .today-chart, .history-chart {
+    width: 4.8rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+
+.pageWarp .chart-tips {
+    color: #FFF;
+    font-size: 0.39525rem;
+    padding: .5rem .8rem;
+}
+
+.pageWarp .chart-tips em {
+    background: url(../../assets/images/welcome/gongxi.png) no-repeat center center;
+    background-size: auto;
+    display: inline-block;
+    position: absolute;
+    left: -0.4rem;
+    top: -0.4rem;
+    width: 0.425rem;
+    height: 0.4rem;
+}
+
+.pageWarp .chart-tips p {
+    position: relative;
+}
+
+.fly-img {
+    opacity: 0.5;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0.875rem;
+}
+
+.pageWarp .info-process {
+    position: absolute;
+    top: .25rem;
+    right: .25rem;
+    height: 100%;
+    margin: .6rem .3rem .3rem 0;
+    box-sizing: border-box;
+}
+
+.pageWarp .rangebox {
+    width: 2.5rem;
+    height: .75rem;
+    border-radius: .2rem;
+    background: -webkit-linear-gradient(left, #FEE00E, #FC0E4A); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #FEE00E, #FC0E4A); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #FEE00E, #FC0E4A); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #FEE00E, #FC0E4A); /* ±ê×¼µÄÓï·¨ */
+    position: relative;
+}
+
+.pageWarp .rangebox-kedu {
+    position: absolute;
+    width: 2.5rem;
+    height: .75rem;
+    background: url(../../assets/images/welcome/kedu.png) repeat-x center center;
+    z-index: 101;
+}
+
+.pageWarp .rangetxt {
+    font-size: 0.22575rem;
+    color: #fdcc00;
+    text-align: center;
+}
+
+.pageWarp .rangebox .tip {
+    font-size: 0.22575rem;
+    width: 1.2rem;
+    height: .5rem;
+    line-height: .5rem;
+    position: absolute;
+    top: -0.6rem;
+    left: -0.5rem;
+    background: #ff2246;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    border: 1px solid #FFF;
+    border-radius: .2rem;
+
+}
+
+.pageWarp .rangebox .tip:after, .pageWarp .rangebox .tip:before {
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    top: 100%;
+    position: absolute;
+    width: 0;
+}
+
+.pageWarp .rangebox .tip:after {
+    border-width: .1rem;
+    border-top-color: #ff2246;
+    left: .4rem;
+
+}
+
+.pageWarp .rangebox .tip:before {
+    border-width: 0.15rem;
+    border-top-color: #FFF;
+    left: 0.35rem;
+
+}
+
+.pageWarp .body_rank_cover {
+    overflow: hidden;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: .2rem;
+    border-top-right-radius: .2rem;
+    position: absolute;
+    right: 0;
+}
+
+.pageWarp .dashboard {
+
+    height: 100%;
+    overflow: hidden;
+}
+
+.dashboard .d-top {
+
+    position: relative;
+    height: 1.4rem;
+    border: 2px solid transparent;
+
+    background-color: #303430;
+    /*border-image: -webkit-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: -moz-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: linear-gradient(to right, #87af5a, #447296) 1 1;*/
+    background-clip: padding-box;
+
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-right: none;
+}
+
+.dashboard .d-top::after {
+
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(to right, #87af5a, #447296);
+    /*background: -webkit-linear-gradient(to right, #87af5a, #447296);
+    background: -moz-linear-gradient(to right, #87af5a, #447296);
+    background: linear-gradient(to right, #87af5a, #447296);*/
+
+    z-index: -1;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.dashboard .d-bottom {
+    height: 8.5rem;
+    border: 2px solid transparent;
+    background-color: #303430;
+    border-image: -webkit-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: -moz-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: linear-gradient(to right, #87af5a, #447296) 1 1;
+    margin-right: .6rem;
+    box-sizing: border-box;
+    margin-top: .375rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 0.1rem #999;
+}
+
+.dashboard .d-bottom .db-title {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.4515rem;
+    text-align: center;
+    /*margin-top: .375rem;*/
+    /*margin-bottom: .375rem;*/
+    margin-top: .135rem;
+    margin-bottom: .135rem;
+    height: .55rem;
+}
+
+.dashboard .d-bottom .db-chart {
+    padding: 0 .5rem .5rem .5rem;
+
+    height: 7rem;
+}
+
+.dashboard .d-middle {
+    height: 7.85rem;
+    margin-top: .375rem;
+    overflow: hidden;
+}
+
+.dashboard .dm-left {
+    height: 100%;
+    width: 36%;
+    background-color: #31daa4;
+    float: left;
+}
+
+.dashboard .dm-left .dml-title {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.4515rem;
+    text-align: center;
+    margin-top: .375rem;
+    margin-bottom: .375rem;
+    height: .75rem;
+}
+
+.dashboard .dm-left .dml-chart {
+    /*height: 4.5rem;
+    width: 4.5rem;*/
+    margin: 0 auto;
+    /* margin-top: .8rem;*/
+}
+
+.dashboard .dm-right {
+    height: 100%;
+    width: 64%;
+    float: right;
+    padding-right: .6rem;
+    padding-left: .375rem;
+    box-sizing: border-box;
+}
+
+.dashboard .dmr-top {
+    height: 3.7375rem;
+    margin-bottom: .375rem;
+    background-color: #303430;
+    border: 2px solid transparent;
+    border-image: -webkit-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: -moz-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: linear-gradient(to right, #87af5a, #447296) 1 1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0.1rem #999;
+}
+
+.dashboard .dmr-bottom {
+    height: 3.7375rem;
+    background-color: #303430;
+    border: 2px solid transparent;
+    border-image: -webkit-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: -moz-linear-gradient(to right, #87af5a, #447296) 1 1;
+    border-image: linear-gradient(to right, #87af5a, #447296) 1 1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0.1rem #999;
+}
+
+.dashboard .dmr-top {
+
+}
+
+.dashboard .dmr-bottom {
+}
+
+.dashboard .d-top li {
+    float: left;
+    width: 25%;
+    color: #FFF;
+    padding: .2rem 0rem .1rem 1.2rem;
+    box-sizing: border-box;
+}
+
+.dashboard .d-top li .dt-line1 {
+    font-size: 0.22575rem;
+}
+
+.dashboard .d-top li .dt-line2 {
+    font-size: 0.22575rem;
+    line-height: 1;
+}
+
+.dashboard .d-top li .dt-line2 .dtnum {
+    font-size: 0.621rem;
+}
+
+.dbc-cont {
+    height: 4.2rem;
+}
+
+.dbc-table {
+    color: #000;
+    height: 1.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.22575rem;
+
+}
+
+.dbc-table table {
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.dbc-table .pnum {
+    background-color: #f7f7f7;
+}
+
+.dbc-table td {
+    /*	width: 1.2rem;*/
+    border: 1px solid #CCCCCC;
+}
+
+.percircle {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 5rem;
+    text-align: center;
+    float: none;
+}
+
+.percircle:after {
+    background-color: #31daa4;
+}
+
+.percircle > span {
+    color: #FFF;
+    height: auto;
+}
+
+.pce-line1 {
+    font-size: 0.22575rem;
+}
+
+.pce-line2 {
+    font-size: 0.79025rem;
+    font-weight: 900;
+}
+
+.pce-line3 {
+    height: 1px;
+    background-color: #2ea67e;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pce-line4 {
+    font-size: 0.79025rem;
+    font-weight: 900;
+}
+
+.pce-line5 {
+    font-size: 0.22575rem;
+}
+

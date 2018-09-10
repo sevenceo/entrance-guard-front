@@ -1,0 +1,212 @@
+--保存微信账号信息 /api/WeChatAccount/createWeChatAccount
+{
+    "name": "test1Name",
+    "account": "zhangsan1Ac1count",
+    "organizationId": "1231231OrganizationId",
+    "dbInstanceId": "12",
+    "headImgUrl": "headimg1231321",
+    "appId": "1231231appid",
+    "appSecret": "secretu111Secret",
+    "appToken": "123123123AppToken",
+    "aesKey": "12312AesKey",
+    "accessToken": "accesstok123",
+    "expiresTime": "2017-08-02T09:32:21.489Z",
+    "isInit": true,
+    "isTokenCreating": true
+}
+
+--删除微信账号信息 /api/WeChatAccount/removeWeChatAccount
+{
+    "id": "test1Name"
+}
+
+根据ID查询 /api/WeChatAccount/getWeChatAccountData
+{
+    "id": "test1Name"
+}
+
+--修改微信账号信息 /api/WeChatAccount/modifyWeChatAccount
+{
+     "id":"123123",
+    "name": "test1Name",
+    "account": "zhangsan1Ac1count",
+    "organizationId": "1231231OrganizationId",
+    "dbInstanceId": "12",
+    "headImgUrl": "headimg1231321",
+    "appId": "1231231appid",
+    "appSecret": "secretu111Secret",
+    "appToken": "123123123AppToken",
+    "aesKey": "12312AesKey",
+    "accessToken": "accesstok123",
+    "expiresTime": "2017-08-02T09:32:21.489Z",
+    "isInit": true,
+    "isTokenCreating": true
+}
+
+--根据account查询信息 /api/WeChatAccount/getWeChatAccount
+{
+    "account": "zhangsan1Ac1count"
+   
+}
+
+--请求分页参数getWeChatAccountPage 
+/api/WeChatAccount/getWeChatAccountPage?pageNum=1&pageSize=7
+
+{
+    "account": "zhangsan1Ac1count"
+   
+}
+
+--返回入参形式
+{
+    "msg": "执行成功!",
+    "data": {
+        "pageNum": 1,
+        "pageSize": 7,
+        "size": 7,
+        "orderBy": null,
+        "startRow": 1,
+        "endRow": 7,
+        "total": 13,
+        "pages": 2,
+        "list": [
+            {
+                "id": "7a4aed74-f3a1-44b2-8d2a-b539d887b08b",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count"
+            },
+            {
+                "id": "e225d5b0-da50-49b6-8403-5d84523379fe",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count0"
+            },
+            {
+                "id": "c5a83e74-f4bb-45eb-94b2-dd50ef501a13",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count1"
+            },
+            {
+                "id": "5062da42-fe57-4fe7-b20d-b85a1a30a5cc",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count2"
+            },
+            {
+                "id": "1c252ac9-ca6a-4926-a6c0-c686d31d1ffc",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count3"
+            },
+            {
+                "id": "c7c5b703-93fe-4e3c-b82e-49a4129b58e9",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count4"
+            },
+            {
+                "id": "a1d9d4a7-1783-49ce-818b-5429c6ad892b",
+                "name": "test1Name",
+                "organizationId": "1231231OrganizationId",
+                "dbInstanceId": "12",
+                "headImgUrl": " +\n        ",
+                "appId": "1231231appid",
+                "appSecret": "secretu111Secret",
+                "appToken": "123123123AppToken",
+                "aesKey": "12312AesKey",
+                "accessToken": "accesstok123",
+                "expiresTime": -28800000,
+                "isInit": true,
+                "isTokenCreating": true,
+                "account": "zhangsan1Ac1count5"
+            }
+        ],
+        "firstPage": 1,
+        "prePage": 0,
+        "nextPage": 2,
+        "lastPage": 2,
+        "isFirstPage": true,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": true,
+        "navigatePages": 8,
+        "navigatepageNums": [
+            1,
+            2
+        ]
+    },
+    "code": "1000",
+    "timestamp": 0
+}
+
+
+出参形式统一如下:
+{
+    "msg": "执行成功!",
+    "data": {},
+    "code": "1000",
+    "timestamp": 0
+}
+如果有数据 则把数据放入data节点

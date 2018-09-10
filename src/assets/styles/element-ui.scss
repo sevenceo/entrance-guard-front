@@ -1,0 +1,300 @@
+ //覆盖一些element-ui样式
+.block-checkbox {
+  display: block;
+}
+
+.operation-container {
+  .cell {
+    padding: 10px !important;
+  }
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 8px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+//针对搜索功能覆盖elementUI部分样式
+
+ .search-dialog{
+   .el-dialog{
+     left:auto;
+     right: -150px;
+     top:15.8%!important;
+     min-width: 300px!important;
+     width:300px;
+     bottom:0;
+     padding-top:20px;
+   }
+   .filter-item{
+     //width: 100%;
+   }
+
+   .el-dialog__body{
+     padding:0px 20px 15px;
+     overflow: auto;height:88%;
+   }
+   .el-dialog__header{
+     display: none;
+   }
+   .el-form-item__content{
+     text-align: left;
+   }
+   .el-form-item{
+     margin-bottom:15px;
+   }
+   .el-form-item__label{
+     //width: 100%;
+     font-size: 14px;
+     text-align: left;
+   }
+   .el-dialog__footer{
+     text-align: center;
+   }
+   .el-radio-button{
+     .el-radio-button__inner{
+       white-space: nowrap;
+       cursor: pointer;
+       display: inline-block;
+       width: 90px;
+       height: 34px;
+       border: none;
+       font-size: 14px;
+       line-height:20px;
+       border-radius: 17px;
+       padding: 7px 20px;
+       background-color: #f5f5f5;
+       //margin-left:0px;
+     }
+
+     }
+   .el-radio-button:last-child .el-radio-button__inner{
+     margin-left: 15px;
+   }
+
+   .el-radio-group{
+     .el-radio-button.is-active{
+       .el-radio-button__inner{
+         background-color: #82bdf2;
+       }
+     }
+     .my-download-radio{
+       .el-radio-button__inner{
+         margin-left:0;
+         margin-top:20px;
+       }
+     }
+     .el-radio-button__inner{
+       width: auto;
+     }
+
+   }
+
+   .el-radio-button__inner{
+     background-color: #f5f5f5;
+   }
+   .el-dialog__footer{
+     width:100%;
+     padding:15px 20px;
+     float:left;
+     // padding-bottom:30px;
+     .reset{
+       float: left;
+     }
+
+   }
+}
+.dialog-footer .el-button--danger{
+  border:solid 1px #de5237;
+  background-color: #de5237;
+}
+
+
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+//.el-dialog {
+//  transform: none;
+//  position: initial;
+//  margin: 10% auto 0;
+//}
+//.el-dialog--small{
+//  width:650px;
+//}
+
+//文章页textarea修改样式
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+.el-submenu.is-opened>.el-submenu__title .el-submenu__icon-arrow{
+    transform: rotateZ(180deg);
+    transform-origin: center 4px;
+}
+.el-submenu__icon-arrow{
+    margin-top:-4px;
+}
+.el-checkbox__inner{
+  border-radius: 0;border: 1px solid #c4c4c4;
+}
+.el-pager li.active{
+    border-color: #5d8ab3;
+    background-color: #5d8ab3;
+}
+.el-table-column--selection .cell{
+  padding:0 0;
+}
+.el-table .cell, .el-table th>div{
+  padding:0 8px;
+}
+.el-tree-node__label{
+    max-width: 440px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dialog-footer .el-button--primary{
+  border-color:#4d84ba!important;
+}
+.el-button--primary{
+  background-color:#4d84ba;border-color:#4d84ba;
+}
+.el-form-item__label{
+  color:#000;
+}
+.el-button--mini{ border:none; background: none; margin-top: 5px;}
+.el-tabs__active-bar{
+  background-color: #4d84ba;
+}
+.el-tabs__item.is-active {
+    color: #4d84ba;
+}
+.el-table{
+  border:solid 1px #c8cbd0;
+}
+.el-table::after, .el-table::before{
+  background:#c6cad6;height:0;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev{
+    border: 1px solid #c8cbd0;
+}
+.el-submenu .el-menu-item{
+  min-width:auto;
+}
+.el-pager li{
+  margin:0 2px;border:solid 1px #c8cbd0;
+}
+.el-pager li.active+li{
+  border-left:solid 1px #c8cbd0;
+}
+.el-pagination .btn-next{
+  margin-left:2px;
+}
+.el-pagination .btn-prev{
+  margin-right:2px;
+}
+.el-pager li:last-child{
+  border-right:solid 1px #c8cbd0;
+}
+.v-content .el-tabs__content{
+    height:100%!important;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__item__inner a,.el-breadcrumb__item:last-child .el-breadcrumb__item__inner a:hover{
+  color:#4d84ba;
+}
+.el-form--label-top .el-form-item__label{
+  padding:0 0 6px 2px;
+}
+.material-wrapper .el-col-lg-6,.material-wrapper .el-col-6 {
+    width: 20%;
+}
+.fixScroll .el-table__body-wrapper{
+  height: 100%;overflow-x:hidden;
+}
+.tab-tags .el-radio__inner{
+  width:14px;height:14px;
+}
+.tab-tags .el-radio+.el-radio{
+  margin-left: 5px;
+}
+
+.dialogForm .el-dialog__body{
+    padding: 10px 20px;
+}
+.dialogForm .item-wrapper{
+  border:solid 1px #d5d5d5;
+}
+
+.exhibition-content .el-tabs--border-card .el-tabs__content{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin-top: 43px;
+                left:0;right:0;overflow-y: auto;
+                height: auto!important;
+            }
+
+.el-message{
+  height:52px;
+  padding:0;min-width: 380px;
+}
+.el-message p{
+  color:#fff;padding-left:15px;
+}
+.el-message .el-message__group{
+  height:52px;
+}
+.el-message .el-message__img {
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 13px;
+    border-radius: 50%;
+}
+.el-message .el-message__closeBtn{
+    top:19px;right:12px;color:#fff;font-size:12px;font-weight: 700;
+}
+
+

@@ -1,0 +1,7 @@
+{
+    "Bad credentials":"用户名密码错误",
+    "error.uaa.login.activated":"当前用户被停用,登录失败",
+    "error.uaa.login.org":"当前用户组织被停用,登录失败",
+    "error.uaa.is.unenable":"当前用户被禁用,登录失败",
+    "error.login.max.limit":"账户已锁定，请30分钟后重试或联系管理员"
+}

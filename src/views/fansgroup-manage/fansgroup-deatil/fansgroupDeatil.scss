@@ -1,0 +1,79 @@
+.el-row {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+data-table{
+  //border: none;
+  .el-table__header-wrapper{
+    .cell{
+      height: 40px;
+      line-height: 40px;
+      // border: #68aeef;
+      color: #ffffff;
+      background: none;
+    }
+    th{
+      height: 40px;
+      line-height:40px;
+      // border: none;
+      background-color:#68aeef;
+    }
+    td{
+      // border: none;
+    }
+    .el-checkbox__inner{
+      border: 1px solid #fff;
+      background-color: #68aeef;
+    }
+
+  }
+  .cell{
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .el-table__body-wrapper tbody{
+    td{
+      border-bottom: none;
+      // padding:5px 0;
+    }
+    .el-table__row--striped .cell{
+      // background: #ebf5ff;
+    }
+  }
+  .edit{
+    background-color: #F4A75B;
+  }
+  .delete{
+    background-color: #F96F70;
+  }
+  .check{
+    background-color: #0bc5d1;
+  }
+
+  .icon{
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+  }
+
+}
+.filter-container{
+  float: right;
+}
+.fans-content{
+  clear: both;background: #fff;padding:20px;border-radius: 3px;
+}
+.formGroups{
+  height:28px;line-height:28px;
+  margin-bottom:0px;padding: 0;
+}
+.formGroups span{ color:#999;}
+.formBox{
+  margin-bottom:15px;
+}

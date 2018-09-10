@@ -1,0 +1,97 @@
+.flex{
+    display: flex;
+}
+
+.wd100{width: 100%}
+.shrink0{flex-shrink: 0}
+
+#content, .cont-row, .nav-left, .cont-right {
+    height: 100%;
+}
+
+.nav-left {
+    background-color: #324157;
+}
+
+.cont-right {
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.el-menu-demo {
+    color: #FFF;
+    background-color: #1f2d3d;
+}
+
+.el-menu--horizontal .el-menu-item, .el-menu--horizontal .el-submenu {
+    float: right;
+}
+
+.el-menu-item, .el-submenu__title {
+    height: 45px;
+    line-height: 45px;
+}
+
+.el-submenu .el-menu-item {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.el-menu-item-group__title {
+    padding-top: 5px;
+}
+
+.app-wrapper .sidebar-wrapper::-webkit-scrollbar {
+    width: 9px;
+}
+
+.app-wrapper .sidebar-wrapper::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+}
+
+
+.app-wrapper .sidebar-wrapper::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+}
+
+.app-wrapper .sidebar-wrapper::-webkit-scrollbar-button {
+    display: none;
+}
+
+.el-menu {
+    border-radius: 0;
+}
+
+.mainMap {
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 20px;
+}
+
+.block {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.tabs-fix-container {
+    position: fixed;
+    top: 120px;
+    left: 195px;
+    right: 0;
+    bottom: 0;
+}
+
+/**add by huyuezheng*/
+.user-filter-container {
+    float: right;
+    margin: 15px 0 10px;
+    padding-bottom: 0;
+}
+
+
+
+
